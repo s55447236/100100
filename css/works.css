@@ -180,7 +180,7 @@ p {
 .content-title p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     letter-spacing: -0.2px;
     color: #666;
     font-weight: 400;
@@ -190,9 +190,8 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 80px;
-    margin: 0px 0 120px 0;
     border-top: 1px solid #eee;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .stat-item {

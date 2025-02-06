@@ -7,132 +7,6 @@
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/works.css">
-    <style>
-        .project-header {
-            padding: 120px 0 60px;
-            background: #000;
-            color: #fff;
-        }
-
-        .project-title {
-            font-size: 80px;
-            font-weight: 700;
-            margin-bottom: 30px;
-        }
-
-        .project-subtitle {
-            font-size: 24px;
-            color: #888;
-            max-width: 600px;
-            margin-bottom: 40px;
-            line-height: 1.6;
-        }
-
-        .project-meta {
-            display: flex;
-            gap: 60px;
-            margin-top: 60px;
-            padding-top: 60px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .meta-item {
-            flex: 1;
-        }
-
-        .meta-item h3 {
-            font-size: 18px;
-            color: #888;
-            margin-bottom: 15px;
-        }
-
-        .meta-item p {
-            font-size: 20px;
-            color: #fff;
-        }
-
-        .project-tags {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .project-tag {
-            padding: 8px 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 100px;
-            color: #fff;
-            font-size: 14px;
-        }
-
-        .project-content {
-            padding: 100px 0;
-        }
-
-        .content-section {
-            margin-bottom: 100px;
-        }
-
-        .content-section h2 {
-            font-size: 48px;
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .content-section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .project-image {
-            width: 100%;
-            border-radius: 20px;
-            margin: 40px 0;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-        }
-
-        .next-project {
-            background: #f8f9fa;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .next-project h2 {
-            font-size: 24px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .next-project-title {
-            font-size: 64px;
-            font-weight: 700;
-            margin-bottom: 40px;
-        }
-
-        .next-project-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 30px;
-            background: #000;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 100px;
-            font-size: 18px;
-            transition: all 0.3s ease;
-        }
-
-        .next-project-link:hover {
-            transform: translateY(-2px);
-        }
-    </style>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -172,74 +46,116 @@
     </nav>
 
     <!-- 项目头部 -->
-    <header class="project-header">
-        <div class="container">
-            <h1 class="project-title">LiteFeast轻食订餐APP</h1>
-            <p class="project-subtitle">专注于健康轻食的在线点餐平台，为用户提供清新、便捷且营养均衡的用餐体验。</p>
-            <div class="project-tags">
-                <span class="project-tag">Mobile App</span>
-                <span class="project-tag">UI/UX Design</span>
-                <span class="project-tag">Food Delivery</span>
+    <div class="project-intro">
+        <span class="project-label">案例研究</span>
+        <h1 class="project-title">专注健康饮食的轻食订餐平台</h1>
+        <p class="project-subtitle">LiteFeast是一款面向健康饮食人群的轻食订餐应用。在快节奏的都市生活中，我们致力于为用户提供健康、便捷且营养均衡的用餐体验。</p>
+    </div>
+
+    <!-- 项目元信息 -->
+    <div class="project-info">
+        <div class="info-wrapper">
+            <div class="meta-item">
+                <h3>客户</h3>
+                <p>LiteFeast Inc.</p>
             </div>
-            <div class="project-meta">
-                <div class="meta-item">
-                    <h3>CLIENT</h3>
-                    <p>LiteFeast Inc.</p>
+            <div class="meta-item">
+                <h3>年份</h3>
+                <p>2024</p>
+            </div>
+            <div class="meta-item">
+                <h3>服务</h3>
+                <p>移动应用设计开发</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 项目图片 -->
+    <div class="project-showcase">
+        <div class="project-image">
+            <img src="../images/work/litefeast.jpg" alt="LiteFeast APP展示">
+        </div>
+    </div>
+
+    <!-- 主要功能 -->
+    <div class="features-section">
+        <h2 class="section-title">主要功能</h2>
+        <div class="features-content">
+            <ol class="features-list" style="counter-reset: item">
+                <li>智能推荐：基于用户饮食习惯和营养需求，提供个性化的健康餐品推荐，帮助用户合理搭配饮食。</li>
+                <li>营养分析：详细展示每份餐品的营养成分，包括热量、蛋白质、碳水化合物等，帮助用户做出健康的选择。</li>
+                <li>快速配送：优化的配送系统确保食物新鲜送达，支持实时订单追踪，提供准确的配送时间预估。</li>
+                <li>会员积分：完善的会员体系，通过订餐累积积分，享受专属优惠和健康饮食指导服务。</li>
+                <li>健康社区：用户可以分享健康饮食心得，参与营养话题讨论，获取专业营养师的建议。</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 技术细节 -->
+    <div class="tech-section">
+        <h2 class="section-title">Technical Details</h2>
+        <div class="tech-tags">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">MongoDB</span>
+        </div>
+    </div>
+
+    <!-- 功能展示图片 -->
+    <div class="features-image">
+        <img src="../images/work/litefeast-features.jpg" alt="LiteFeast功能展示">
+    </div>
+
+    <!-- 项目成果 -->
+    <div class="results-section">
+        <h2 class="section-title">Project Results</h2>
+        <div class="content-title">
+            <p>应用上线三个月内，用户数量突破10万，日均订单量超过3000单。用户反馈显示，95%的用户对菜品质量和配送速度表示满意。通过智能推荐系统，用户的重复购买率提升了40%。</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-label">用户满意度</div>
+                    <div class="stat-number">95%</div>
                 </div>
-                <div class="meta-item">
-                    <h3>YEAR</h3>
-                    <p>2024</p>
+                <div class="stat-item">
+                    <div class="stat-label">复购率提升</div>
+                    <div class="stat-number">40%</div>
                 </div>
-                <div class="meta-item">
-                    <h3>ROLE</h3>
-                    <p>Mobile App Design & Development</p>
-                </div>
-                <div class="meta-item">
-                    <h3>PLATFORM</h3>
-                    <p>iOS & Android</p>
+                <div class="stat-item">
+                    <div class="stat-label">日均订单</div>
+                    <div class="stat-number">3K+</div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
-    <!-- 项目内容 -->
-    <main class="project-content">
-        <div class="container">
-            <div class="content-section">
-                <h2>项目概述</h2>
-                <p>LiteFeast是一款面向健康饮食人群的轻食订餐应用。在快节奏的都市生活中，越来越多的人开始关注健康饮食。我们的目标是打造一个既能提供健康美味的轻食，又能确保快速配送的移动应用平台。</p>
-                <div class="project-image">
-                    <img src="../images/work/litefeast.jpg" alt="LiteFeast APP界面">
-                </div>
+    <!-- 更多案例研究 -->
+    <div class="more-projects">
+        <div class="more-projects-content">
+            <div class="more-projects-header">
+                <h3>更多案例研究</h3>
             </div>
-
-            <div class="content-section">
-                <h2>设计理念</h2>
-                <p>应用采用清新简约的设计风格，以绿色和白色为主色调，传达健康和纯净的理念。界面设计注重用户体验，通过直观的食材展示、详细的营养信息和简单的操作流程，让用户能够轻松选择适合自己的健康美食。</p>
-            </div>
-
-            <div class="content-section">
-                <h2>技术实现</h2>
-                <p>我们使用Flutter框架开发跨平台应用，确保iOS和Android用户都能获得流畅的体验。后端采用微服务架构，使用Spring Boot构建RESTful API。应用集成了实时订单追踪、智能推荐系统和支付功能，并针对高峰期的并发访问进行了优化。</p>
-            </div>
-
-            <div class="content-section">
-                <h2>成果展示</h2>
-                <p>应用上线三个月内，用户数量突破10万，日均订单量超过3000单。用户反馈显示，95%的用户对菜品质量和配送速度表示满意。通过智能推荐系统，用户的重复购买率提升了40%。应用在各大应用商店的评分均保持在4.8星以上。</p>
+            <div class="cases-grid">
+                <a href="terminus.html" class="case-item">
+                    <div class="case-date">2024 年 1 月</div>
+                    <h3 class="case-title">TERMINUS官网</h3>
+                    <p class="case-desc">为人工智能和物联网领域的领先企业打造全新的品牌形象和网站设计。</p>
+                    <div class="read-more">
+                        阅读更多 <span>→</span>
+                    </div>
+                </a>
+                <a href="smart-fire.html" class="case-item">
+                    <div class="case-date">2023 年 12 月</div>
+                    <h3 class="case-title">智慧消防平台</h3>
+                    <p class="case-desc">基于大数据的智能消防监控平台，实现消防设备的实时监控和智能预警。</p>
+                    <div class="read-more">
+                        阅读更多 <span>→</span>
+                    </div>
+                </a>
             </div>
         </div>
-    </main>
-
-    <!-- 下一个项目 -->
-    <section class="next-project">
-        <div class="container">
-            <h2>下一个项目</h2>
-            <div class="next-project-title">TERMINUS官网</div>
-            <a href="terminus.html" class="next-project-link">
-                查看项目 <span>→</span>
-            </a>
-        </div>
-    </section>
+    </div>
 
     <!-- 页脚 -->
     <footer class="footer">

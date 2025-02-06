@@ -7,132 +7,6 @@
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/works.css">
-    <style>
-        .project-header {
-            padding: 120px 0 60px;
-            background: #000;
-            color: #fff;
-        }
-
-        .project-title {
-            font-size: 80px;
-            font-weight: 700;
-            margin-bottom: 30px;
-        }
-
-        .project-subtitle {
-            font-size: 24px;
-            color: #888;
-            max-width: 600px;
-            margin-bottom: 40px;
-            line-height: 1.6;
-        }
-
-        .project-meta {
-            display: flex;
-            gap: 60px;
-            margin-top: 60px;
-            padding-top: 60px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .meta-item {
-            flex: 1;
-        }
-
-        .meta-item h3 {
-            font-size: 18px;
-            color: #888;
-            margin-bottom: 15px;
-        }
-
-        .meta-item p {
-            font-size: 20px;
-            color: #fff;
-        }
-
-        .project-tags {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .project-tag {
-            padding: 8px 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 100px;
-            color: #fff;
-            font-size: 14px;
-        }
-
-        .project-content {
-            padding: 100px 0;
-        }
-
-        .content-section {
-            margin-bottom: 100px;
-        }
-
-        .content-section h2 {
-            font-size: 48px;
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .content-section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .project-image {
-            width: 100%;
-            border-radius: 20px;
-            margin: 40px 0;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-        }
-
-        .next-project {
-            background: #f8f9fa;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .next-project h2 {
-            font-size: 24px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .next-project-title {
-            font-size: 64px;
-            font-weight: 700;
-            margin-bottom: 40px;
-        }
-
-        .next-project-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 30px;
-            background: #000;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 100px;
-            font-size: 18px;
-            transition: all 0.3s ease;
-        }
-
-        .next-project-link:hover {
-            transform: translateY(-2px);
-        }
-    </style>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -172,74 +46,116 @@
     </nav>
 
     <!-- 项目头部 -->
-    <header class="project-header">
-        <div class="container">
-            <h1 class="project-title">智慧消防平台</h1>
-            <p class="project-subtitle">基于大数据的智能消防监控平台，实现消防设备的实时监控和智能预警。</p>
-            <div class="project-tags">
-                <span class="project-tag">UI Design</span>
-                <span class="project-tag">Dashboard</span>
-                <span class="project-tag">Data Visualization</span>
+    <div class="project-intro">
+        <span class="project-label">案例研究</span>
+        <h1 class="project-title">基于大数据的智能消防监控平台</h1>
+        <p class="project-subtitle">智慧消防平台是一个面向城市消防管理的综合性解决方案。通过物联网技术实时采集消防设备数据，利用大数据分析和人工智能技术，为消防管理部门提供设备监控、隐患预警、应急指挥等功能。</p>
+    </div>
+
+    <!-- 项目元信息 -->
+    <div class="project-info">
+        <div class="info-wrapper">
+            <div class="meta-item">
+                <h3>客户</h3>
+                <p>北京市消防局</p>
             </div>
-            <div class="project-meta">
-                <div class="meta-item">
-                    <h3>CLIENT</h3>
-                    <p>北京市消防局</p>
+            <div class="meta-item">
+                <h3>年份</h3>
+                <p>2024</p>
+            </div>
+            <div class="meta-item">
+                <h3>服务</h3>
+                <p>UI设计，前端开发</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 项目图片 -->
+    <div class="project-showcase">
+        <div class="project-image">
+            <img src="../images/work/smart-fire.jpg" alt="智慧消防平台展示">
+        </div>
+    </div>
+
+    <!-- 主要功能 -->
+    <div class="features-section">
+        <h2 class="section-title">主要功能</h2>
+        <div class="features-content">
+            <ol class="features-list" style="counter-reset: item">
+                <li>实时监控：通过物联网设备实时采集消防设备运行数据，实现24小时不间断监控，及时发现设备异常。</li>
+                <li>智能预警：基于AI算法分析历史数据和实时数据，对潜在的消防安全隐患进行预警，提前防范事故发生。</li>
+                <li>应急指挥：集成GIS地图系统，提供可视化的应急指挥调度功能，优化应急响应流程。</li>
+                <li>数据分析：利用大数据技术，对消防设备运行状态、故障类型、维护记录等进行深度分析，辅助决策。</li>
+                <li>移动管理：提供移动端应用，支持随时随地进行设备监控、报警处理和任务分配。</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 技术细节 -->
+    <div class="tech-section">
+        <h2 class="section-title">Technical Details</h2>
+        <div class="tech-tags">
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">Spring Cloud</span>
+            <span class="tech-tag">ECharts</span>
+            <span class="tech-tag">WebSocket</span>
+        </div>
+    </div>
+
+    <!-- 功能展示图片 -->
+    <div class="features-image">
+        <img src="../images/work/smart-fire-features.jpg" alt="智慧消防平台功能展示">
+    </div>
+
+    <!-- 项目成果 -->
+    <div class="results-section">
+        <h2 class="section-title">Project Results</h2>
+        <div class="content-title">
+            <p>平台上线后，显著提升了消防管理效率。系统响应时间从分钟级降至秒级，设备故障发现时间缩短90%。通过智能预警功能，成功预防了多起潜在的消防安全事故。</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-label">故障发现提速</div>
+                    <div class="stat-number">90%</div>
                 </div>
-                <div class="meta-item">
-                    <h3>YEAR</h3>
-                    <p>2024</p>
+                <div class="stat-item">
+                    <div class="stat-label">系统响应提升</div>
+                    <div class="stat-number">95%</div>
                 </div>
-                <div class="meta-item">
-                    <h3>ROLE</h3>
-                    <p>UI/UX Design, Frontend Development</p>
-                </div>
-                <div class="meta-item">
-                    <h3>PLATFORM</h3>
-                    <p>Web Application</p>
+                <div class="stat-item">
+                    <div class="stat-label">隐患预防率</div>
+                    <div class="stat-number">85%</div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
-    <!-- 项目内容 -->
-    <main class="project-content">
-        <div class="container">
-            <div class="content-section">
-                <h2>项目概述</h2>
-                <p>智慧消防平台是一个面向城市消防管理的综合性解决方案。该平台通过物联网技术实时采集消防设备数据，利用大数据分析和人工智能技术，为消防管理部门提供设备监控、隐患预警、应急指挥等功能，全面提升城市消防安全管理水平。</p>
-                <div class="project-image">
-                    <img src="../images/work/smart-fire.jpg" alt="智慧消防平台界面">
-                </div>
+    <!-- 更多案例研究 -->
+    <div class="more-projects">
+        <div class="more-projects-content">
+            <div class="more-projects-header">
+                <h3>更多案例研究</h3>
             </div>
-
-            <div class="content-section">
-                <h2>设计理念</h2>
-                <p>平台的设计以数据可视化和用户体验为核心，采用深色主题减少视觉疲劳。界面布局清晰直观，重要信息和警报信息采用醒目的视觉处理，确保管理人员能够快速响应各类消防事件。我们还为移动端设计了响应式界面，支持随时随地进行监控和管理。</p>
-            </div>
-
-            <div class="content-section">
-                <h2>技术实现</h2>
-                <p>平台采用微服务架构，使用Spring Cloud构建后端服务。前端使用Vue.js框架，结合ECharts实现丰富的数据可视化效果。实时数据通过WebSocket推送，确保数据的实时性。系统还集成了多个AI模型，用于异常检测和风险预警，支持多维度的数据分析和预测。</p>
-            </div>
-
-            <div class="content-section">
-                <h2>成果展示</h2>
-                <p>平台上线后，显著提升了消防管理效率。系统响应时间从分钟级降至秒级，设备故障发现时间缩短90%。通过智能预警功能，成功预防了多起潜在的消防安全事故。平台获得了消防部门的高度认可，并计划在更多城市推广使用。</p>
+            <div class="cases-grid">
+                <a href="terravolt.html" class="case-item">
+                    <div class="case-date">2024 年 1 月</div>
+                    <h3 class="case-title">TerraVolt官网</h3>
+                    <p class="case-desc">为可再生能源解决方案提供商打造现代化的品牌网站，展现环保理念。</p>
+                    <div class="read-more">
+                        阅读更多 <span>→</span>
+                    </div>
+                </a>
+                <a href="terminus.html" class="case-item">
+                    <div class="case-date">2024 年 1 月</div>
+                    <h3 class="case-title">TERMINUS官网</h3>
+                    <p class="case-desc">为人工智能和物联网领域的领先企业打造全新的品牌形象和网站设计。</p>
+                    <div class="read-more">
+                        阅读更多 <span>→</span>
+                    </div>
+                </a>
             </div>
         </div>
-    </main>
-
-    <!-- 下一个项目 -->
-    <section class="next-project">
-        <div class="container">
-            <h2>下一个项目</h2>
-            <div class="next-project-title">TerraVolt官网</div>
-            <a href="terravolt.html" class="next-project-link">
-                查看项目 <span>→</span>
-            </a>
-        </div>
-    </section>
+    </div>
 
     <!-- 页脚 -->
     <footer class="footer">
