@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraVolt - Percent Studio</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .project-header {
+            padding: 120px 0 60px;
+            background: #fff;
+            color: #000;
+            text-align: center;
+        }
+
+    
+
+        .project-subtitle {
+            font-size: 20px;
+            color: #666;
+            max-width: 680px;
+            margin: 0;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: left;
+            gap: 200px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .meta-item {
+            text-align: center;
+        }
+
+        .meta-item h3 {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .meta-item p {
+            font-size: 18px;
+            color: #000;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .project-tag {
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 100px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .project-content {
+            padding: 40px 0;
+            background: #fff;
+        }
+
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+        }
+
+        .content-header {
+            margin-bottom: 40px;
+        }
+
+        .content-title {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .content-title p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #666;
+            margin: 0;
+        }
+
+        .content-desc {
+            flex: 2;
+        }
+
+        .content-section h2 {
+            font-size: 32px;
+            margin: 0;
+            text-align: left;
+            font-weight: 500;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #666;
+            margin: 0;
+            text-align: left;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 20px;
+            margin: 0;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .project-label {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            display: inline-block;
+
+            border-radius: 100px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: left;
+
+        }
+
+        .tech-tag {
+            font-size: 16px;
+            color: #000;
+            padding: 12px 24px;
+            background: rgb(240, 240, 240);
+            border-radius: 100px;
+            font-weight: 500;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin: 60px 0;
+            text-align: left;
+            border-top: 1px solid #eee;
+            padding-top: 60px;
+        }
+
+        .stat-item {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: #eee;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #000;
+            line-height: 1;
+        }
+
+        .more-cases {
+            padding: 100px 0;
+            background: #fff;
+        }
+
+        .more-cases-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 60px;
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .case-item {
+
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .case-item:hover {
+            transform: translateY(-10px);
+    
+        }
+
+        .case-date {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .case-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #000;
+        }
+
+        .case-desc {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            color: #000;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .read-more:hover {
+            gap: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .content-header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .content-title {
+                flex: none;
+            }
+
+            .content-desc {
+                flex: none;
+            }
+
+            .content-section h2 {
+                font-size: 28px;
+            }
+
+            .content-section p {
+                font-size: 16px;
+            }
+        }
+
+        .project-intro {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 180px 20px 120px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project-title {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.2;
+            color: #000;
+        }
+
+        .project-subtitle {
+            font-size: 20px;
+            color: #666;
+            max-width: 680px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .project-label {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 100px;
+        }
+
+        .features-section,
+        .tech-section,
+        .results-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .project-info {
+            margin: 0 auto;
+        }
+
+        .info-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-showcase {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .features-section,
+        .tech-section,
+        .results-section {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0px 40px;
+            margin-top: 120px;
+            margin-bottom: 120px;
+            background: #fff;
+        }
+
+        .tech-section h2,
+        .results-section h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .tech-tags,
+        .content-desc {
+            max-width: 760px;
+        }
+
+        .features-image {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .features-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+
+        }
+
+        .features-list {
+            text-align: left;
+            list-style-position: outside;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .features-list li {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        .more-projects {
+            background: rgb(240, 240, 240);
+            padding: 120px 0;
+        }
+
+        .more-projects-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .more-projects h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 60px;
+            text-align: left;
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <button class="menu-btn" id="menuBtn">
+                <span class="menu-text">Menu</span>
+                <span class="menu-dots">••</span>
+            </button>
+            
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="Percent Studio" class="logo-image">
+            </a>
+            
+            <a href="/#contact" class="contact-btn">
+                <span class="contact-text">Get in Touch</span>
+                <span class="chat-icon">💬</span>
+            </a>
+
+            <!-- 下拉菜单 -->
+            <div class="dropdown-menu" id="dropdownMenu">
+                <nav class="menu-nav">
+                    <a href="/">Home</a>
+                    <a href="../works.html">Portfolio</a>
+                    <a href="/#services">Expertise</a>
+                    <a href="/#contact">Contact</a>
+                </nav>
+                <div class="menu-footer">
+                    <div class="language-switch">
+                        <a href="#" class="active">EN</a>
+                        <a href="#">中文</a>
+                        <a href="#">日本語</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 项目头部 -->
+    <div class="project-intro">
+        <span class="project-label">案例研究</span>
+        <h1 class="project-title">为可再生能源打造现代化品牌形象</h1>
+        <p class="project-subtitle">TerraVolt是一家专注于可再生能源解决方案的创新企业。我们通过现代化的品牌设计和网站开发，展现其在环保领域的专业实力。</p>
+    </div>
+
+    <!-- 项目元信息 -->
+    <div class="project-info">
+        <div class="info-wrapper">
+            <div class="project-meta">
+                <div class="meta-item">
+                    <h3>客户</h3>
+                    <p>TerraVolt Energy Solutions</p>
+                </div>
+                <div class="meta-item">
+                    <h3>年份</h3>
+                    <p>2024</p>
+                </div>
+                <div class="meta-item">
+                    <h3>服务</h3>
+                    <p>品牌设计，网站开发</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 项目图片 -->
+    <div class="project-showcase">
+        <div class="project-image">
+            <img src="../images/work/terravolt.jpg" alt="TerraVolt网站首页">
+        </div>
+    </div>
+
+    <!-- 主要功能 -->
+    <div class="features-section">
+        <h2 class="section-title">主要功能</h2>
+        <div class="features-content">
+            <ol class="features-list" style="counter-reset: item">
+                <li>提供绿色能源解决方案：为家庭、企业和工业提供清洁、可持续的能源，包括太阳能、风能、水力发电和地热能，满足客户的能源需求。</li>
+                <li>智能推荐：根据客户的能源需求，提供量身定制的绿色能源方案，帮助客户降低碳足迹，减少能源消耗。</li>
+                <li>快速服务：简洁直观的操作界面，快速了解我们的服务，轻松获取绿色能源解决方案。</li>
+                <li>在线咨询：随时咨询我们的绿色能源专家，了解最适合客户的可再生能源选择，获取精准的解决方案。</li>
+                <li>绿色评估：提供能源效率审计和可持续发展评估，帮助客户找到节能潜力和提高能源利用效率的方法。</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 技术细节 -->
+    <div class="tech-section">
+        <h2 class="section-title">Technical Details</h2>
+        <div class="tech-tags">
+            <span class="tech-tag">Frontend (Next.js)</span>
+            <span class="tech-tag">Custom CMS</span>
+            <span class="tech-tag">SEO</span>
+            <span class="tech-tag">Infrastructure</span>
+        </div>
+    </div>
+
+    <!-- 功能展示图片 -->
+    <div class="features-image">
+        <img src="../images/work/terravolt-features.jpg" alt="TerraVolt功能展示">
+    </div>
+
+    
+    <!-- 项目成果 -->
+    <div class="results-section">
+        <h2 class="section-title">Project Results</h2>
+        <div class="content-title">
+            <p>新网站上线后，TerraVolt 的品牌形象得到了显著提升。网站访问量增加了 150%，用户平均停留时间提升了 200%。客户反馈表示，新网站很好地传达了公司的专业形象和环保理念。</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-label">品牌知名度提升</div>
+                    <div class="stat-number">150%</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">用户停留时间增加</div>
+                    <div class="stat-number">200%</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">客户满意度</div>
+                    <div class="stat-number">98%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 更多案例研究 -->
+    <div class="more-projects">
+        <div class="more-projects-content">
+            <h2>更多案例研究</h2>
+            <div class="cases-grid">
+                <a href="terminus.html" class="case-item">
+                    <div class="case-date">2024 年 1 月</div>
+                    <h3 class="case-title">TERMINUS官网</h3>
+                    <p class="case-desc">为人工智能和物联网领域的领先企业打造全新的品牌形象和网站设计。</p>
+                    <div class="read-more">
+                        阅读更多 <span>→</span>
+                    </div>
+                </a>
+                <a href="smart-fire.html" class="case-item">
+                    <div class="case-date">2023 年 12 月</div>
+                    <h3 class="case-title">智慧消防平台</h3>
+                    <p class="case-desc">基于大数据的智能消防监控平台，实现消防设备的实时监控和智能预警。</p>
+                    <div class="read-more">
+                        阅读更多 <span>→</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- 社交媒体 -->
+                <div class="footer-section">
+                    <h3>SOCIALS</h3>
+                    <ul class="social-links">
+                        <li><a href="#">WeChat</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">X</a></li>
+                    </ul>
+                </div>
+
+                <!-- 联系方式 -->
+                <div class="footer-section">
+                    <h3>CONTACT</h3>
+                    <div class="contact-info">
+                        <a href="mailto:55447236@qq.com" class="contact-email">
+                            55447236<span class="highlight">@</span>qq.com
+                        </a>
+                        <a href="tel:+8618601080736" class="contact-phone">
+                            (+86) 186-0108-0736
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 快速链接 -->
+                <div class="footer-section">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="quick-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="../works.html">Portfolio</a></li>
+                        <li><a href="/#services">Expertie</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logo滚动区 -->
+            <div class="footer-logo-scroll">
+                <div class="logo-track">
+                    <span class="big-logo">percent studio<sup>tm</sup></span>
+                    <span class="big-logo">percent studio<sup>tm</sup></span>
+                    <span class="big-logo">percent studio<sup>tm</sup></span>
+                </div>
+            </div>
+
+            <!-- 版权信息 -->
+            <div class="footer-bottom">
+                <p>&copy;2024 percent</p>
+                <div class="footer-bottom-links">
+                    <a href="../terms.html">Terms of Service</a>
+                    <a href="../privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

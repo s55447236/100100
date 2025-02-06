@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧消防平台 - Percent Studio</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .project-header {
+            padding: 120px 0 60px;
+            background: #000;
+            color: #fff;
+        }
+
+        .project-title {
+            font-size: 80px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .project-subtitle {
+            font-size: 24px;
+            color: #888;
+            max-width: 600px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 60px;
+            margin-top: 60px;
+            padding-top: 60px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .meta-item {
+            flex: 1;
+        }
+
+        .meta-item h3 {
+            font-size: 18px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .meta-item p {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .project-tag {
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 100px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .project-content {
+            padding: 100px 0;
+        }
+
+        .content-section {
+            margin-bottom: 100px;
+        }
+
+        .content-section h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .next-project {
+            background: #f8f9fa;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .next-project h2 {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .next-project-title {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .next-project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 100px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .next-project-link:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <button class="menu-btn" id="menuBtn">
+                <span class="menu-text">Menu</span>
+                <span class="menu-dots">••</span>
+            </button>
+            
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="Percent Studio" class="logo-image">
+            </a>
+            
+            <a href="/#contact" class="contact-btn">
+                <span class="contact-text">Get in Touch</span>
+                <span class="chat-icon">💬</span>
+            </a>
+
+            <!-- 下拉菜单 -->
+            <div class="dropdown-menu" id="dropdownMenu">
+                <nav class="menu-nav">
+                    <a href="/">Home</a>
+                    <a href="../works.html">Portfolio</a>
+                    <a href="/#services">Expertise</a>
+                    <a href="/#contact">Contact</a>
+                </nav>
+                <div class="menu-footer">
+                    <div class="language-switch">
+                        <a href="#" class="active">EN</a>
+                        <a href="#">中文</a>
+                        <a href="#">日本語</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 项目头部 -->
+    <header class="project-header">
+        <div class="container">
+            <h1 class="project-title">智慧消防平台</h1>
+            <p class="project-subtitle">基于大数据的智能消防监控平台，实现消防设备的实时监控和智能预警。</p>
+            <div class="project-tags">
+                <span class="project-tag">UI Design</span>
+                <span class="project-tag">Dashboard</span>
+                <span class="project-tag">Data Visualization</span>
+            </div>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <h3>CLIENT</h3>
+                    <p>北京市消防局</p>
+                </div>
+                <div class="meta-item">
+                    <h3>YEAR</h3>
+                    <p>2024</p>
+                </div>
+                <div class="meta-item">
+                    <h3>ROLE</h3>
+                    <p>UI/UX Design, Frontend Development</p>
+                </div>
+                <div class="meta-item">
+                    <h3>PLATFORM</h3>
+                    <p>Web Application</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 项目内容 -->
+    <main class="project-content">
+        <div class="container">
+            <div class="content-section">
+                <h2>项目概述</h2>
+                <p>智慧消防平台是一个面向城市消防管理的综合性解决方案。该平台通过物联网技术实时采集消防设备数据，利用大数据分析和人工智能技术，为消防管理部门提供设备监控、隐患预警、应急指挥等功能，全面提升城市消防安全管理水平。</p>
+                <div class="project-image">
+                    <img src="../images/work/smart-fire.jpg" alt="智慧消防平台界面">
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>设计理念</h2>
+                <p>平台的设计以数据可视化和用户体验为核心，采用深色主题减少视觉疲劳。界面布局清晰直观，重要信息和警报信息采用醒目的视觉处理，确保管理人员能够快速响应各类消防事件。我们还为移动端设计了响应式界面，支持随时随地进行监控和管理。</p>
+            </div>
+
+            <div class="content-section">
+                <h2>技术实现</h2>
+                <p>平台采用微服务架构，使用Spring Cloud构建后端服务。前端使用Vue.js框架，结合ECharts实现丰富的数据可视化效果。实时数据通过WebSocket推送，确保数据的实时性。系统还集成了多个AI模型，用于异常检测和风险预警，支持多维度的数据分析和预测。</p>
+            </div>
+
+            <div class="content-section">
+                <h2>成果展示</h2>
+                <p>平台上线后，显著提升了消防管理效率。系统响应时间从分钟级降至秒级，设备故障发现时间缩短90%。通过智能预警功能，成功预防了多起潜在的消防安全事故。平台获得了消防部门的高度认可，并计划在更多城市推广使用。</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 下一个项目 -->
+    <section class="next-project">
+        <div class="container">
+            <h2>下一个项目</h2>
+            <div class="next-project-title">TerraVolt官网</div>
+            <a href="terravolt.html" class="next-project-link">
+                查看项目 <span>→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- 社交媒体 -->
+                <div class="footer-section">
+                    <h3>SOCIALS</h3>
+                    <ul class="social-links">
+                        <li><a href="#">WeChat</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">X</a></li>
+                    </ul>
+                </div>
+
+                <!-- 联系方式 -->
+                <div class="footer-section">
+                    <h3>CONTACT</h3>
+                    <div class="contact-info">
+                        <a href="mailto:55447236@qq.com" class="contact-email">
+                            55447236<span class="highlight">@</span>qq.com
+                        </a>
+                        <a href="tel:+8618601080736" class="contact-phone">
+                            (+86) 186-0108-0736
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 快速链接 -->
+                <div class="footer-section">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="quick-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="../works.html">Portfolio</a></li>
+                        <li><a href="/#services">Expertie</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logo滚动区 -->
+            <div class="footer-logo-scroll">
+                <div class="logo-track">
+                    <span class="big-logo">percent studio<sup>tm</sup></span>
+                    <span class="big-logo">percent studio<sup>tm</sup></span>
+                    <span class="big-logo">percent studio<sup>tm</sup></span>
+                </div>
+            </div>
+
+            <!-- 版权信息 -->
+            <div class="footer-bottom">
+                <p>&copy;2024 percent</p>
+                <div class="footer-bottom-links">
+                    <a href="../terms.html">Terms of Service</a>
+                    <a href="../privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

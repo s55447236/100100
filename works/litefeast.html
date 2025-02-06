@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiteFeast轻食订餐APP - Percent Studio</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .project-header {
+            padding: 120px 0 60px;
+            background: #000;
+            color: #fff;
+        }
+
+        .project-title {
+            font-size: 80px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .project-subtitle {
+            font-size: 24px;
+            color: #888;
+            max-width: 600px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 60px;
+            margin-top: 60px;
+            padding-top: 60px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .meta-item {
+            flex: 1;
+        }
+
+        .meta-item h3 {
+            font-size: 18px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .meta-item p {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .project-tag {
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 100px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .project-content {
+            padding: 100px 0;
+        }
+
+        .content-section {
+            margin-bottom: 100px;
+        }
+
+        .content-section h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .next-project {
+            background: #f8f9fa;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .next-project h2 {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .next-project-title {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .next-project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 100px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .next-project-link:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <button class="menu-btn" id="menuBtn">
+                <span class="menu-text">Menu</span>
+                <span class="menu-dots">••</span>
+            </button>
+            
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="Percent Studio" class="logo-image">
+            </a>
+            
+            <a href="/#contact" class="contact-btn">
+                <span class="contact-text">Get in Touch</span>
+                <span class="chat-icon">💬</span>
+            </a>
+
+            <!-- 下拉菜单 -->
+            <div class="dropdown-menu" id="dropdownMenu">
+                <nav class="menu-nav">
+                    <a href="/">Home</a>
+                    <a href="../works.html">Portfolio</a>
+                    <a href="/#services">Expertise</a>
+                    <a href="/#contact">Contact</a>
+                </nav>
+                <div class="menu-footer">
+                    <div class="language-switch">
+                        <a href="#" class="active">EN</a>
+                        <a href="#">中文</a>
+                        <a href="#">日本語</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 项目头部 -->
+    <header class="project-header">
+        <div class="container">
+            <h1 class="project-title">LiteFeast轻食订餐APP</h1>
+            <p class="project-subtitle">专注于健康轻食的在线点餐平台，为用户提供清新、便捷且营养均衡的用餐体验。</p>
+            <div class="project-tags">
+                <span class="project-tag">Mobile App</span>
+                <span class="project-tag">UI/UX Design</span>
+                <span class="project-tag">Food Delivery</span>
+            </div>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <h3>CLIENT</h3>
+                    <p>LiteFeast Inc.</p>
+                </div>
+                <div class="meta-item">
+                    <h3>YEAR</h3>
+                    <p>2024</p>
+                </div>
+                <div class="meta-item">
+                    <h3>ROLE</h3>
+                    <p>Mobile App Design & Development</p>
+                </div>
+                <div class="meta-item">
+                    <h3>PLATFORM</h3>
+                    <p>iOS & Android</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 项目内容 -->
+    <main class="project-content">
+        <div class="container">
+            <div class="content-section">
+                <h2>项目概述</h2>
+                <p>LiteFeast是一款面向健康饮食人群的轻食订餐应用。在快节奏的都市生活中，越来越多的人开始关注健康饮食。我们的目标是打造一个既能提供健康美味的轻食，又能确保快速配送的移动应用平台。</p>
+                <div class="project-image">
+                    <img src="../images/work/litefeast.jpg" alt="LiteFeast APP界面">
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>设计理念</h2>
+                <p>应用采用清新简约的设计风格，以绿色和白色为主色调，传达健康和纯净的理念。界面设计注重用户体验，通过直观的食材展示、详细的营养信息和简单的操作流程，让用户能够轻松选择适合自己的健康美食。</p>
+            </div>
+
+            <div class="content-section">
+                <h2>技术实现</h2>
+                <p>我们使用Flutter框架开发跨平台应用，确保iOS和Android用户都能获得流畅的体验。后端采用微服务架构，使用Spring Boot构建RESTful API。应用集成了实时订单追踪、智能推荐系统和支付功能，并针对高峰期的并发访问进行了优化。</p>
+            </div>
+
+            <div class="content-section">
+                <h2>成果展示</h2>
+                <p>应用上线三个月内，用户数量突破10万，日均订单量超过3000单。用户反馈显示，95%的用户对菜品质量和配送速度表示满意。通过智能推荐系统，用户的重复购买率提升了40%。应用在各大应用商店的评分均保持在4.8星以上。</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 下一个项目 -->
+    <section class="next-project">
+        <div class="container">
+            <h2>下一个项目</h2>
+            <div class="next-project-title">TERMINUS官网</div>
+            <a href="terminus.html" class="next-project-link">
+                查看项目 <span>→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- 社交媒体 -->
+                <div class="footer-section">
+                    <h3>SOCIALS</h3>
+                    <ul class="social-links">
+                        <li><a href="#">WeChat</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">X</a></li>
+                    </ul>
+                </div>
+
+                <!-- 联系方式 -->
+                <div class="footer-section">
+                    <h3>CONTACT</h3>
+                    <div class="contact-info">
+                        <a href="mailto:55447236@qq.com" class="contact-email">
+                            55447236<span class="highlight">@</span>qq.com
+                        </a>
+                        <a href="tel:+8618601080736" class="contact-phone">
+                            (+86) 186-0108-0736
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 快速链接 -->
+                <div class="footer-section">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="quick-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="../works.html">Portfolio</a></li>
+                        <li><a href="/#services">Expertie</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logo滚动区 -->
+            <div class="footer-logo-scroll">
+                <div class="logo-track">
+                    <span class="big-logo">percent studio<sup>tm</sup></span>
+                    <span class="big-logo">percent studio<sup>tm</sup></span>
+                    <span class="big-logo">percent studio<sup>tm</sup></span>
+                </div>
+            </div>
+
+            <!-- 版权信息 -->
+            <div class="footer-bottom">
+                <p>&copy;2024 percent</p>
+                <div class="footer-bottom-links">
+                    <a href="../terms.html">Terms of Service</a>
+                    <a href="../privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
