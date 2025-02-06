@@ -1,0 +1,124 @@
+// 菜单控制
+const menuBtn = document.getElementById('menuBtn');
+const dropdownMenu = document.getElementById('dropdownMenu');
+const menuLinks = document.querySelectorAll('.menu-nav a');
+
+// 切换菜单显示状态
+menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // 阻止事件冒泡
+    dropdownMenu.classList.toggle('active');
+});
+
+// 点击菜单链接时关闭菜单
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        dropdownMenu.classList.remove('active');
+    });
+});
+
+// 点击页面其他地方关闭菜单
+document.addEventListener('click', (e) => {
+    if (!dropdownMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+        dropdownMenu.classList.remove('active');
+    }
+});
+
+// 导航栏滚动效果
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+    } else {
+        navbar.style.backgroundColor = 'transparent';
+    }
+});
+
+// 平滑滚动
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// 联系表单提交
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // 获取表单数据
+        const formData = {
+            name: this.querySelector('input[type="text"]').value,
+            email: this.querySelector('input[type="email"]').value,
+            message: this.querySelector('textarea').value
+        };
+        
+        // 这里可以添加表单验证逻辑
+        
+        // 模拟表单提交
+        alert('感谢您的留言！我们会尽快与您联系。');
+        this.reset();
+    });
+}
+
+// 添加页面加载动画
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('loaded');
+});
+
+// 添加滚动动画
+const observerOptions = {
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// 观察所有需要动画的元素
+document.querySelectorAll('.work-item, .service-item, .partner-item').forEach(item => {
+    observer.observe(item);
+});
+
+// 合作伙伴滚动效果
+const partnerTrack = document.querySelector('.partner-track');
+if (partnerTrack) {
+    // 触摸设备滚动暂停
+    partnerTrack.addEventListener('touchstart', () => {
+        partnerTrack.style.animationPlayState = 'paused';
+    });
+
+    partnerTrack.addEventListener('touchend', () => {
+        partnerTrack.style.animationPlayState = 'running';
+    });
+
+    // 动态调整滚动速度
+    const adjustScrollSpeed = () => {
+        const width = window.innerWidth;
+        let duration = '30s'; // 默认速度
+
+        if (width < 768) {
+            duration = '20s'; // 移动端速度更快
+        }
+
+        partnerTrack.style.animationDuration = duration;
+    };
+
+    // 初始化速度
+    adjustScrollSpeed();
+
+    // 窗口大小改变时调整速度
+    window.addEventListener('resize', adjustScrollSpeed);
+} 
