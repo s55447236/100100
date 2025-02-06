@@ -358,7 +358,7 @@ section {
 
 .work-links {
     display: flex;
-    gap: 20px;
+    gap: 12px;
 }
 
 .work-link {
@@ -382,6 +382,11 @@ section {
     align-items: center;
     justify-content: space-between;
     margin-top: 60px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
 }
 
 .nav-btn {
@@ -715,7 +720,6 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 20px 30px;
     background: rgba(0, 0, 0, 0.05);
     border-radius: 20px;
 }
