@@ -135,11 +135,11 @@ section {
 
 /* 首页英雄区样式 */
 .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     background-color: #fff;
     display: flex;
     align-items: center;
-    padding: 120px 0 60px;
+    padding: 180px 0 60px;
 }
 
 .hero .container {
@@ -926,7 +926,7 @@ section {
 /* Logo滚动区域 */
 .footer-logo-scroll {
     overflow: hidden;
-    margin: 40px 0;
+    margin: 0px 0 40px 0;
     padding: 20px 0;
 }
 

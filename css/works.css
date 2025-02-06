@@ -1,0 +1,463 @@
+/* 项目介绍 */
+.project-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 240px 20px 160px;
+    text-align: center;
+}
+
+.project-label {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.project-title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    line-height: 1.1;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+/* 段落文本基础样式 */
+p {
+    margin: 0;
+    padding: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 项目介绍段落 */
+.project-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 0 auto;
+    letter-spacing: -0.2px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* 项目信息 */
+.project-info {
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 120px;
+    background: #fff;
+}
+
+.info-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #fff;
+}
+
+.meta-item {
+    padding: 32px 48px;
+    position: relative;
+}
+
+.meta-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 48px;
+    bottom: 48px;
+    width: 1px;
+    background: #eee;
+}
+
+.meta-item h3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.meta-item p {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+/* 项目展示图 */
+.project-showcase {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* 通用部分标题样式 */
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 50px;
+    text-align: left;
+    letter-spacing: -0.5px;
+}
+
+/* 内容区域通用样式 */
+.features-section,
+.tech-section,
+.results-section {
+    max-width: 760px;
+    margin: 200px auto;
+    padding: 0 20px;
+}
+
+/* 功能列表 */
+.features-list {
+    list-style-position: outside;
+    padding-left: 32px;
+    margin: 0;
+}
+
+.features-list li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    letter-spacing: -0.2px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* 技术标签 */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tech-tag {
+    font-size: 16px;
+    color: #000;
+    padding: 16px 32px;
+    background: rgb(240, 240, 240);
+    border-radius: 100px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+/* 功能展示图 */
+.features-image {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin: 160px 40px;
+}
+
+.features-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* 项目成果 */
+.content-title {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* 项目成果段落 */
+.content-title p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    letter-spacing: -0.2px;
+    color: #666;
+    font-weight: 400;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    margin: 0px 0 120px 0;
+    border-top: 1px solid #eee;
+    padding-top: 60px;
+}
+
+.stat-item {
+    position: relative;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    letter-spacing: -0.2px;
+}
+
+.stat-number {
+    font-size: 64px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+/* 更多案例研究 */
+.more-projects {
+    background: #f9f9f9;
+    padding: 160px 0;
+    position: relative;
+}
+
+.more-projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    height: 1px;
+}
+
+.more-projects-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.more-projects-header {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more-projects h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.case-item {
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    padding: 48px;
+}
+
+.case-item:hover {
+    transform: translateY(-8px);
+    background: #fff;
+    box-shadow: 0 22px 44px rgba(0, 0, 0, 0.08);
+}
+
+.case-date {
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.case-title {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 16px;
+    transition: color 0.3s ease;
+    padding-bottom: 20px;
+}
+
+.case-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    letter-spacing: -0.2px;
+    color: #666;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.read-more span {
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.case-item:hover .read-more span {
+    transform: translateX(6px);
+}
+
+.case-item:hover .case-title {
+    color: #000;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .project-intro {
+        padding: 180px 20px 100px;
+    }
+
+    .project-title {
+        font-size: 56px;
+    }
+
+    .project-subtitle,
+    .features-list li,
+    .content-title p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .stat-number {
+        font-size: 56px;
+    }
+
+    .case-title {
+        font-size: 28px;
+    }
+
+    .info-wrapper {
+        grid-template-columns: 1fr;
+        border-radius: 20px;
+    }
+
+    .meta-item {
+        padding: 40px;
+    }
+
+    .meta-item:not(:last-child)::after {
+        top: auto;
+        bottom: 0;
+        right: 40px;
+        left: 40px;
+        width: auto;
+        height: 1px;
+    }
+
+    .cases-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        margin: 80px 0;
+        padding-top: 80px;
+    }
+
+    .features-section,
+    .tech-section,
+    .results-section {
+        margin: 160px auto;
+        padding: 0 20px;
+    }
+
+    .more-projects {
+        padding: 100px 0;
+    }
+
+    .more-projects-header {
+        margin-bottom: 48px;
+    }
+
+    .more-projects h3 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .cases-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .case-item {
+        padding: 32px;
+    }
+
+    .case-title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .case-desc {
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .case-date {
+        margin-bottom: 16px;
+    }
+
+    .content-title p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .more-projects {
+        padding: 80px 0;
+    }
+
+    .more-projects h3 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .case-item {
+        padding: 24px;
+    }
+
+    .project-subtitle,
+    .features-list li,
+    .content-title p {
+        font-size: 15px;
+    }
+
+    .case-desc {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+} 

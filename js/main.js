@@ -107,7 +107,7 @@ if (partnerTrack) {
     // 动态调整滚动速度
     const adjustScrollSpeed = () => {
         const width = window.innerWidth;
-        let duration = '30s'; // 默认速度
+        let duration = '50s'; // 默认速度
 
         if (width < 768) {
             duration = '20s'; // 移动端速度更快
