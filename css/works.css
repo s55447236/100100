@@ -159,12 +159,13 @@ p {
 /* 功能展示图 */
 .features-image {
     max-width: 1200px;
-    margin: 0 auto;
-    margin: 160px 40px;
+    margin: 160px auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .features-image img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 30px;
 }
