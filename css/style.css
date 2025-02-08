@@ -275,7 +275,11 @@ section {
 .section-title {
     font-size: 64px;
     font-weight: 700;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.works .section-title {
     color: #fff;
 }
 
@@ -414,7 +418,7 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -511,10 +515,26 @@ section {
 }
 
 .services .section-title {
-    font-size: 64px;
+    font-size: 72px;
     line-height: 1.2;
     color: #000;
     font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services .section-title span {
+    background: #FFD700;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    font-size: 64px;
+    line-height: 1.4;
+    margin: 10px 0;
 }
 
 .services-grid {
@@ -622,11 +642,12 @@ section {
 
 @media (max-width: 1024px) {
     .services .section-title {
-        font-size: 48px;
+        font-size: 80px;
     }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+    
+    .services .section-title span {
+        font-size: 48px;
+        padding: 8px 24px;
     }
 }
 
@@ -643,11 +664,25 @@ section {
         bottom: 30px;
         right: 30px;
     }
+    
+    .services .section-title {
+        font-size: 48px;
+    }
+    
+    .services .section-title span {
+        font-size: 32px;
+        padding: 6px 20px;
+    }
 }
 
 @media (max-width: 480px) {
     .services .section-title {
         font-size: 36px;
+    }
+    
+    .services .section-title span {
+        font-size: 24px;
+        padding: 5px 15px;
     }
 
     .service-item h3 {
@@ -732,7 +767,6 @@ section {
 .contact-email:hover,
 .contact-phone:hover {
     background: rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
 }
 
 .highlight {
@@ -840,7 +874,6 @@ section {
     .contact-email,
     .contact-phone {
         font-size: 18px;
-        padding: 15px 20px;
     }
 }
 
@@ -1322,4 +1355,33 @@ section {
 /* 鼠标悬停效果 */
 .process-item:hover:not(.active) {
     background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-info-left {
+    flex: 1;
+}
+
+.contact-method {
+    margin-bottom: 40px;
+}
+
+.contact-method h3 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contact-method a {
+    font-size: 36px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-method a:hover {
+    color: #666;
 } 

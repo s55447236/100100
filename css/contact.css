@@ -81,7 +81,7 @@
 
 .submit-btn {
     background: #c1f664;
-    color: #fff;
+    color: #000;
     border: none;
     padding: 20px 40px;
     border-radius: 100px;
@@ -116,29 +116,31 @@
 }
 
 .contact-method h3 {
-    font-size: 18px;
-    color: #666;
+    font-size: 24px;
+    color: #000;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .contact-method a {
-    font-size: 20px;
+    font-size: 48px;
     color: #000;
     text-decoration: none;
     font-weight: 500;
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 15px 20px;
-    background: #fff;
-    border-radius: 10px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
     transition: all 0.3s ease;
+    line-height: 1.2;
 }
 
 .contact-method a:hover {
     color: #666;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transform: translateX(10px);
+    box-shadow: none;
 }
 
 .qr-codes {
@@ -208,6 +210,14 @@
         width: 100px;
         height: 100px;
     }
+
+    .contact-method h3 {
+        font-size: 20px;
+    }
+    
+    .contact-method a {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -220,6 +230,14 @@
     .qr-placeholder {
         width: 120px;
         height: 120px;
+    }
+
+    .contact-method h3 {
+        font-size: 18px;
+    }
+    
+    .contact-method a {
+        font-size: 24px;
     }
 }
 
@@ -234,10 +252,10 @@
 }
 
 .process-subtitle {
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 700;
     margin-bottom: 60px;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 .process-steps {
