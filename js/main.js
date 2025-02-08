@@ -125,4 +125,20 @@ if (partnerTrack) {
 
     // 窗口大小改变时调整速度
     window.addEventListener('resize', adjustScrollSpeed);
-} 
+}
+
+// 流程步骤交互
+const processSteps = document.querySelectorAll('.process-item');
+
+// 默认展开第一个步骤
+processSteps[0].classList.add('active');
+
+// 为每个步骤添加鼠标进入事件
+processSteps.forEach(step => {
+    step.addEventListener('mouseenter', () => {
+        // 关闭所有步骤
+        processSteps.forEach(s => s.classList.remove('active'));
+        // 展开当前步骤
+        step.classList.add('active');
+    });
+}); 
