@@ -50,12 +50,11 @@ section {
 }
 
 .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
 }
 
-.menu-btn, .contact-btn {
+.menu-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -66,9 +65,6 @@ section {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.menu-btn {
     background: none;
     border: 1px solid #0a0a0a;
     white-space: nowrap;
@@ -90,7 +86,7 @@ section {
 
 .contact-btn:hover {
     transform: translateY(-2px);
-    background: #22c55e;
+    background: #B1E654;
 }
 
 .logo-image {
@@ -165,7 +161,7 @@ section {
     display: inline-block;
     width: 8px;
     height: 8px;
-    background-color: #22c55e;
+    background-color: #B1E654;
     border-radius: 50%;
     margin-right: 8px;
 }
@@ -415,13 +411,13 @@ section {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 24px;
-    background-color: #22c55e;
+    background-color: #B1E654;
     border-radius: 100px;
     transition: all 0.3s ease;
 }
 
 .view-all:hover {
-    background-color: #1ea550;
+    background-color: #a1d644;
     transform: translateX(5px);
 }
 
@@ -534,7 +530,7 @@ section {
 }
 
 .service-item.green {
-    background: #22c55e;
+    background: #B1E654;
     color: #fff;
 }
 
@@ -731,7 +727,7 @@ section {
 }
 
 .highlight {
-    color: #22c55e;
+    color: #B1E654;
 }
 
 .contact-form {
@@ -769,12 +765,12 @@ section {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #22c55e;
+    border-color: #B1E654;
     background: rgba(0, 0, 0, 0.08);
 }
 
 .submit-btn {
-    background: #22c55e;
+    background: #B1E654;
     color: #fff;
     border: none;
     padding: 20px 40px;
@@ -787,7 +783,7 @@ section {
 }
 
 .submit-btn:hover {
-    background: #1ea550;
+    background: #a1d644;
     transform: translateY(-2px);
 }
 
@@ -897,7 +893,7 @@ section {
 
 .social-links a:hover,
 .quick-links a:hover {
-    color: #22c55e;
+    color: #B1E654;
 }
 
 .contact-info {
@@ -916,11 +912,11 @@ section {
 
 .contact-email:hover,
 .contact-phone:hover {
-    color: #22c55e;
+    color: #B1E654;
 }
 
 .highlight {
-    color: #22c55e;
+    color: #B1E654;
 }
 
 /* Logo滚动区域 */
@@ -947,7 +943,7 @@ section {
 
 .big-logo sup {
     font-size: 24px;
-    color: #22c55e;
+    color: #B1E654;
     opacity: 1;
 }
 
@@ -1101,7 +1097,7 @@ section {
 .dropdown-menu {
     position: absolute;
     top: calc(100% + 20px);
-    left: 20px;
+    right: 20px;
     width: 300px;
     background: #fff;
     border-radius: 20px;
@@ -1174,7 +1170,8 @@ section {
 @media (max-width: 768px) {
     .dropdown-menu {
         width: calc(100vw - 40px);
-        left: 20px;
+        right: 20px;
+        left: auto;
     }
     
     .menu-nav a {
