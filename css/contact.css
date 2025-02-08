@@ -151,6 +151,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+}
+
+.qr-code-label {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
 }
 
 .qr-placeholder {
