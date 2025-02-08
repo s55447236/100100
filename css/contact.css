@@ -81,15 +81,15 @@
 
 .submit-btn {
     background: #c1f664;
-    color: #000;
+    color: #fff;
     border: none;
-    padding: 15px 30px;
+    padding: 20px 40px;
     border-radius: 100px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
-    align-self: flex-start;
+    margin-top: 20px;
 }
 
 .submit-btn:hover {
@@ -102,6 +102,9 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 80px;
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 40px;
 }
 
 .contact-info-left {
@@ -126,10 +129,16 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .contact-method a:hover {
     color: #666;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .qr-codes {
@@ -152,6 +161,15 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.qr-placeholder:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .qr-placeholder img {
@@ -199,7 +217,7 @@
 }
 
 .contact-process {
-    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .process-title {

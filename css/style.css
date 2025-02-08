@@ -84,7 +84,7 @@ section {
 
 .contact-btn:hover {
     transform: translateY(-2px);
-    background: #B1E654;
+    background: #c1f664;
 }
 
 .logo-image {
@@ -159,7 +159,7 @@ section {
     display: inline-block;
     width: 8px;
     height: 8px;
-    background-color: #B1E654;
+    background-color: #c1f664;
     border-radius: 50%;
     margin-right: 8px;
 }
@@ -409,7 +409,7 @@ section {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 24px;
-    background-color: #B1E654;
+    background-color: #c1f664;
     border-radius: 100px;
     transition: all 0.3s ease;
 }
@@ -528,8 +528,8 @@ section {
 }
 
 .service-item.green {
-    background: #B1E654;
-    color: #fff;
+    background: #c1f664;
+    color: #000;
 }
 
 .service-icon {
@@ -570,10 +570,11 @@ section {
 
 .service-item.dark .service-tag {
     background: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
 
 .service-item.green .service-tag {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .service-link {
@@ -598,7 +599,7 @@ section {
 }
 
 .service-item.green .service-link {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .service-item:hover {
@@ -725,7 +726,7 @@ section {
 }
 
 .highlight {
-    color: #B1E654;
+    color: #c1f664;
 }
 
 .contact-form {
@@ -763,12 +764,12 @@ section {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #B1E654;
+    border-color: #c1f664;
     background: rgba(0, 0, 0, 0.08);
 }
 
 .submit-btn {
-    background: #B1E654;
+    background: #c1f664;
     color: #fff;
     border: none;
     padding: 20px 40px;
@@ -891,7 +892,7 @@ section {
 
 .social-links a:hover,
 .quick-links a:hover {
-    color: #B1E654;
+    color: #c1f664;
 }
 
 .contact-info {
@@ -910,11 +911,11 @@ section {
 
 .contact-email:hover,
 .contact-phone:hover {
-    color: #B1E654;
+    color: #c1f664;
 }
 
 .highlight {
-    color: #B1E654;
+    color: #c1f664;
 }
 
 /* Logo滚动区域 */
@@ -941,7 +942,7 @@ section {
 
 .big-logo sup {
     font-size: 24px;
-    color: #B1E654;
+    color: #c1f664;
     opacity: 1;
 }
 
@@ -1200,7 +1201,7 @@ section {
 }
 
 .logo-bg {
-    color: #B1E654;
+    color: #c1f664;
     transition: all 0.3s ease;
 }
 
@@ -1215,7 +1216,7 @@ section {
 }
 
 .logo:hover .logo-mark {
-    color: #B1E654;
+    color: #c1f664;
     animation-play-state: paused;
 }
 
