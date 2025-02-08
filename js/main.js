@@ -27,9 +27,13 @@ document.addEventListener('click', (e) => {
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.6)';
+        navbar.style.backdropFilter = 'blur(10px)';
+        navbar.style.webkitBackdropFilter = 'blur(10px)';
     } else {
         navbar.style.backgroundColor = 'transparent';
+        navbar.style.backdropFilter = 'none';
+        navbar.style.webkitBackdropFilter = 'none';
     }
 });
 
