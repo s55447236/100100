@@ -170,9 +170,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: #fff;
+    background: ##f8f9fa;
     padding: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
 }
 

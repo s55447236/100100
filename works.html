@@ -42,9 +42,6 @@
         }
 
         .explore-header {
-            position: sticky;
-            top: 120px;
-            z-index: 100;
             padding: 20px 0;
             transition: all 0.3s ease;
             mix-blend-mode: difference;
@@ -377,9 +374,9 @@
             <!-- Logo滚动区 -->
             <div class="footer-logo-scroll">
                 <div class="logo-track">
-                    <span class="big-logo">percent studio<sup>tm</sup></span>
-                    <span class="big-logo">percent studio<sup>tm</sup></span>
-                    <span class="big-logo">percent studio<sup>tm</sup></span>
+                    <span class="big-logo">Percent Studio<sup>tm</sup></span>
+                    <span class="big-logo">Percent Studio<sup>tm</sup></span>
+                    <span class="big-logo">Percent Studio<sup>tm</sup></span>
                 </div>
             </div>
 
@@ -395,24 +392,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-        // 处理滚动事件
-        const exploreHeader = document.querySelector('.explore-header');
-        let lastScrollTop = 0;
-
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (scrollTop > lastScrollTop && scrollTop > 200) {
-                // 向上滚动
-                exploreHeader.classList.add('inverted');
-            } else {
-                // 向下滚动
-                exploreHeader.classList.remove('inverted');
-            }
-            
-            lastScrollTop = scrollTop;
-        });
-    </script>
 </body>
 </html> 
