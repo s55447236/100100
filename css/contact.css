@@ -116,31 +116,38 @@
 }
 
 .contact-method h3 {
-    font-size: 24px;
+    font-size: 18px;
     color: #000;
     margin-bottom: 10px;
     font-weight: 500;
 }
 
 .contact-method a {
-    font-size: 48px;
+    font-size: 28px;
     color: #000;
     text-decoration: none;
     font-weight: 500;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 0;
-    background: transparent;
-    border-radius: 0;
-    transition: all 0.3s ease;
+    gap: 4px;
     line-height: 1.2;
+    transition: all 0.3s ease;
 }
 
-.contact-method a:hover {
-    color: #666;
-    transform: translateX(10px);
-    box-shadow: none;
+.contact-method a::after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-image: url('../images/arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+    padding-top: 12px;
+}
+
+.contact-method a:hover::after {
+    transform: translate(5px, -5px);
 }
 
 .qr-codes {
@@ -170,7 +177,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: ##f8f9fa;
+    background: #f8f9fa;
     padding: 10px;
     transition: all 0.3s ease;
 }
