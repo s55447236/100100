@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Percent Studio 百分比设计工作室专注品牌设计、网站建设、视觉体验与数字营销，为企业打造创新数字化解决方案。">
     <title>Percent Studio 百分比设计工作室</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -31,23 +34,23 @@
             </a>
             
             <button class="menu-btn" id="menuBtn">
-                <span class="menu-text">菜单</span>
+                <span class="menu-text" data-i18n="menu">菜单</span>
                 <span class="menu-dots">••</span>
             </button>
 
             <!-- 下拉菜单 -->
             <div class="dropdown-menu" id="dropdownMenu">
                 <nav class="menu-nav">
-                    <a href="#home">首页</a>
-                    <a href="works.html">精选案例</a>
-                    <a href="#services">服务内容</a>
-                    <a href="#grow">联系我们</a>
+                    <a href="#home" data-i18n="home">首页</a>
+                    <a href="works.html" data-i18n="works">精选案例</a>
+                    <a href="#services" data-i18n="services">服务内容</a>
+                    <a href="#grow" data-i18n="contact">联系我们</a>
                 </nav>
                 <div class="menu-footer">
                     <div class="language-switch">
-                        <a href="#">EN</a>
-                        <a href="#" class="active">中文</a>
-                        <a href="#">日本語</a>
+                        <a href="#" data-lang="en">EN</a>
+                        <a href="#" data-lang="zh" class="active">中文</a>
+                        <a href="#" data-lang="ja">日本語</a>
                     </div>
                 </div>
             </div>
@@ -58,13 +61,13 @@
     <section id="home" class="hero">
         <div id="particles-js"></div>
         <div class="container">
-            <div class="status-badge">接受项目咨询</div>
-            <h1 class="hero-title">
+            <div class="status-badge" data-i18n="status">接受项目咨询</div>
+            <h1 class="hero-title" data-i18n="hero_title">
                 创新设计
                 <br>
                 引领数字未来
             </h1>
-            <a href="#grow" class="cta-button">联系我们</a>
+            <a href="#grow" class="cta-button" data-i18n="cta_contact">联系我们</a>
         </div>
     </section>
 
@@ -137,7 +140,7 @@
     <!-- 作品展示 -->
     <section id="works" class="works">
         <div class="container">
-            <h2 class="section-title">精选案例</h2>
+            <h2 class="section-title" data-i18n="section_works">精选案例</h2>
             <div class="works-grid">
                 <div class="work-item">
                     <a href="works/terminus.html">
@@ -145,8 +148,8 @@
                             <img src="images/work/terminus.jpg" alt="TERMINUS官网">
                         </div>
                         <div class="work-info">
-                            <h3>TERMINUS官网</h3>
-                            <p>为人工智能和物联网领域的领先企业打造全新的品牌形象和网站设计。</p>
+                            <h3 data-i18n="work_terminus_title">TERMINUS官网</h3>
+                            <p data-i18n="work_terminus_desc">为人工智能和物联网领域的领先企业打造全新的品牌形象和网站设计。</p>
                             <div class="work-links">
                                 <span class="work-link">Website</span>
                                 <span class="work-link">Brand Design</span>
@@ -162,8 +165,8 @@
                             <img src="images/work/smart-fire.jpg" alt="智慧消防平台">
                         </div>
                         <div class="work-info">
-                            <h3>智慧消防平台</h3>
-                            <p>基于大数据的智能消防监控平台，实现消防设备的实时监控和智能预警。</p>
+                            <h3 data-i18n="work_smartfire_title">智慧消防平台</h3>
+                            <p data-i18n="work_smartfire_desc">基于大数据的智能消防监控平台，实现消防设备的实时监控和智能预警。</p>
                             <div class="work-links">
                                 <span class="work-link">UI Design</span>
                                 <span class="work-link">Dashboard</span>
@@ -212,7 +215,7 @@
                     <button class="nav-btn prev">←</button>
                     <button class="nav-btn next">→</button>
                 </div>
-                <a href="works.html" class="view-all">
+                <a href="works.html" class="view-all" data-i18n="view_all">
                     查看全部作品
                     <span class="arrow">→</span>
                 </a>
@@ -224,15 +227,15 @@
     <section id="services" class="services">
         <div class="container">
             <div class="services-header">
-                <span class="section-label">服务内容</span>
-                <h2 class="section-title">我们知道如何<br>实现您的愿景</h2>
+                <span class="section-label" data-i18n="service_label">服务内容</span>
+                <h2 class="section-title" data-i18n="service_title">我们知道如何<br>实现您的愿景</h2>
             </div>
             
             <div class="services-grid">
                 <div class="service-item">
                     <div class="service-icon">⚡</div>
-                    <h3>Powerhouse Development</h3>
-                    <p>我们的开发团队随时准备将视觉美感转化为代码，采用最新技术实现您的愿景。</p>
+                    <h3 data-i18n="service_dev_title">Powerhouse Development</h3>
+                    <p data-i18n="service_dev_desc">我们的开发团队随时准备将视觉美感转化为代码，采用最新技术实现您的愿景。</p>
                     <div class="service-tags">
                         <span class="service-tag">CMS</span>
                         <span class="service-tag">UX/UI Design</span>
@@ -245,8 +248,8 @@
 
                 <div class="service-item dark">
                     <div class="service-icon">✨</div>
-                    <h3>Design Pro</h3>
-                    <p>我们的设计是与品牌本质共鸣的叙事，确保每位客户都能获得独特的体验。</p>
+                    <h3 data-i18n="service_design_title">Design Pro</h3>
+                    <p data-i18n="service_design_desc">我们的设计是与品牌本质共鸣的叙事，确保每位客户都能获得独特的体验。</p>
                     <div class="service-tags">
                         <span class="service-tag">Logo</span>
                         <span class="service-tag">3D Design & Motion</span>
@@ -259,8 +262,8 @@
 
                 <div class="service-item green">
                     <div class="service-icon">📈</div>
-                    <h3>Digital Marketing</h3>
-                    <p>通过可衡量的结果提升您的业务可见度，我们的团队始终紧跟最新趋势。</p>
+                    <h3 data-i18n="service_marketing_title">Digital Marketing</h3>
+                    <p data-i18n="service_marketing_desc">通过可衡量的结果提升您的业务可见度，我们的团队始终紧跟最新趋势。</p>
                     <div class="service-tags">
                         <span class="service-tag">Google, Meta, Tiktok Ads</span>
                         <span class="service-tag">E-mail MK</span>
@@ -276,44 +279,44 @@
     <section id="process" class="process">
         <div class="container">
             <div class="services-header">
-                <span class="section-label">我们是如何工作的</span>
-                <h2 class="section-title">我们运用前沿技术<br>提供创新服务</h2>
+                <span class="section-label" data-i18n="process_label">我们是如何工作的</span>
+                <h2 class="section-title" data-i18n="process_title">我们运用前沿技术<br>提供创新服务</h2>
             </div>
 
             <div class="process-steps">
                 <div class="process-item">
                     <div class="process-header">
-                        <h4>(01) 了解您的品牌需求</h4>
+                        <h4 data-i18n="process_step1_title">(01) 了解您的品牌需求</h4>
                     </div>
                     <div class="process-content">
-                        <p>通过深入沟通和需求分析，我们将全面了解您的品牌诉求。您可以通过电话联系或填写表单，我们的专业团队将第一时间与您取得联系，开启项目合作。</p>
+                        <p data-i18n="process_step1_desc">通过深入沟通和需求分析，我们将全面了解您的品牌诉求。您可以通过电话联系或填写表单，我们的专业团队将第一时间与您取得联系，开启项目合作。</p>
                     </div>
                 </div>
 
                 <div class="process-item">
                     <div class="process-header">
-                        <h4>(02) 制定品牌视觉策略</h4>
+                        <h4 data-i18n="process_step2_title">(02) 制定品牌视觉策略</h4>
                     </div>
                     <div class="process-content">
-                        <p>通过深入的市场研究和品牌分析，我们将为您制定独特的视觉策略。包括品牌定位、视觉识别系统、设计语言等，确保您的品牌在竞争中脱颖而出。</p>
+                        <p data-i18n="process_step2_desc">通过深入的市场研究和品牌分析，我们将为您制定独特的视觉策略。包括品牌定位、视觉识别系统、设计语言等，确保您的品牌在竞争中脱颖而出。</p>
                     </div>
                 </div>
 
                 <div class="process-item">
                     <div class="process-header">
-                        <h4>(03) 构建易用且稳固的解决方案</h4>
+                        <h4 data-i18n="process_step3_title">(03) 构建易用且稳固的解决方案</h4>
                     </div>
                     <div class="process-content">
-                        <p>我们采用最新的技术和最佳实践，构建易于使用且具有扩展性的解决方案。从用户体验设计到技术架构，每个细节都经过精心打磨，确保产品的长期可持续发展。</p>
+                        <p data-i18n="process_step3_desc">我们采用最新的技术和最佳实践，构建易于使用且具有扩展性的解决方案。从用户体验设计到技术架构，每个细节都经过精心打磨，确保产品的长期可持续发展。</p>
                     </div>
                 </div>
 
                 <div class="process-item">
                     <div class="process-header">
-                        <h4>(04) 持续的服务支持</h4>
+                        <h4 data-i18n="process_step4_title">(04) 持续的服务支持</h4>
                     </div>
                     <div class="process-content">
-                        <p>项目上线只是新的开始。我们提供持续的技术支持、性能优化和功能迭代，帮助您的产品不断进化。定期的数据分析和用户反馈收集，确保产品始终满足市场需求。</p>
+                        <p data-i18n="process_step4_desc">项目上线只是新的开始。我们提供持续的技术支持、性能优化和功能迭代，帮助您的产品不断进化。定期的数据分析和用户反馈收集，确保产品始终满足市场需求。</p>
                     </div>
                 </div>
             </div>
@@ -326,17 +329,17 @@
     <!-- 联系我们 -->
     <section id="contact" class="contact">
         <div class="container">
-            <h1 class="contact-title" id="grow">让我们一起成长</h1>
-            <p class="contact-subtitle">让我们成为合作伙伴，一起创造令人惊叹的作品！</p>
+            <h1 class="contact-title" id="grow" data-i18n="contact_title">让我们一起成长</h1>
+            <p class="contact-subtitle" data-i18n="contact_subtitle">让我们成为合作伙伴，一起创造令人惊叹的作品！</p>
             
             <div class="contact-info-section">
                 <div class="contact-info-left">
                     <div class="contact-method">
-                        <h3>电话</h3>
+                        <h3 data-i18n="phone">电话</h3>
                         <a href="tel:+8618601080736">(+86) 186-0108-0736</a>
                     </div>
                     <div class="contact-method">
-                        <h3>邮箱</h3>
+                        <h3 data-i18n="email">邮箱</h3>
                         <a href="mailto:55447236@qq.com">55447236@qq.com</a>
                     </div>
                 </div>
@@ -345,19 +348,19 @@
                         <div class="qr-placeholder">
                             <img src="images/qr/wechat.png" alt="微信二维码">
                         </div>
-                        <div class="qr-code-label">微信</div>
+                        <div class="qr-code-label" data-i18n="wechat">微信</div>
                     </div>
                     <div class="qr-code-item">
                         <div class="qr-placeholder">
                             <img src="images/qr/xiaohongshu.png" alt="小红书二维码">
                         </div>
-                        <div class="qr-code-label">小红书</div>
+                        <div class="qr-code-label" data-i18n="xiaohongshu">小红书</div>
                     </div>
                     <div class="qr-code-item">
                         <div class="qr-placeholder">
                             <img src="images/qr/douyin.png" alt="抖音二维码">
                         </div>
-                        <div class="qr-code-label">抖音</div>
+                        <div class="qr-code-label" data-i18n="douyin">抖音</div>
                     </div>
                 </div>
             </div>
@@ -370,9 +373,9 @@
             <div class="footer-grid">
                 <!-- 社交媒体 -->
                 <div class="footer-section">
-                    <h3>社交媒体</h3>
+                    <h3 data-i18n="social_media">社交媒体</h3>
                     <ul class="social-links">
-                        <li><a href="#">WeChat</a></li>
+                        <li><a href="#" data-i18n="wechat">WeChat</a></li>
                         <li><a href="#">WhatsApp</a></li>
                         <li><a href="#">Instagram</a></li>
                         <li><a href="#">X</a></li>
@@ -381,7 +384,7 @@
 
                 <!-- 联系方式 -->
                 <div class="footer-section">
-                    <h3>联系方式</h3>
+                    <h3 data-i18n="contact">联系方式</h3>
                     <div class="contact-info">
                         <a href="mailto:55447236@qq.com" class="contact-email">
                             55447236<span class="highlight">@</span>qq.com
@@ -394,12 +397,12 @@
 
                 <!-- 快速链接 -->
                 <div class="footer-section">
-                    <h3>快速链接</h3>
+                    <h3 data-i18n="quick_links">快速链接</h3>
                     <ul class="quick-links">
-                        <li><a href="#home">首页</a></li>
-                        <li><a href="works.html">精选案例</a></li>
-                        <li><a href="#services">服务内容</a></li>
-                        <li><a href="#grow">联系我们</a></li>
+                        <li><a href="#home" data-i18n="home">首页</a></li>
+                        <li><a href="works.html" data-i18n="works">精选案例</a></li>
+                        <li><a href="#services" data-i18n="services">服务内容</a></li>
+                        <li><a href="#grow" data-i18n="contact">联系我们</a></li>
                     </ul>
                 </div>
             </div>
@@ -415,18 +418,15 @@
 
             <!-- 版权信息 -->
             <div class="footer-bottom">
-                <div class="footer-bottom-links">
+                 <div class="footer-bottom-links">
                     <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2025114576号-1</a>
                 </div>
-                
                 <div class="footer-bottom-links">
-                    <a href="terms.html">Terms of Service</a>
-                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html" data-i18n="terms">Terms of Service</a>
+                    <a href="privacy.html" data-i18n="privacy">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html> 

@@ -1294,18 +1294,39 @@ section {
 }
 
 .process-item {
-    border-radius: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
     overflow: hidden;
-    background: #0a0a0a;
-    color: #fff;
-    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: all 0.3s ease;
 }
 
 .process-header {
-    padding: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.3s ease;
+}
+
+.process-header:hover {
+    background-color: #e9ecef;
+}
+
+.process-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.process-item.expanded .process-content {
+    max-height: 500px;
+    padding: 20px;
 }
 
 .process-header h4 {
@@ -1316,39 +1337,11 @@ section {
 
 .process-header::after {
     content: '+';
-    font-size: 32px;
-    font-weight: 300;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 24px;
+    transition: transform 0.3s ease;
 }
 
-.process-content {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0 30px;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.process-content p {
-    line-height: 1.8;
-    font-size: 16px;
-    opacity: 0;
-    padding: 0px 50px 0 49px;
-    transform: translateY(20px);
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-                opacity 0.3s ease;
-}
-
-/* 激活状态 */
-.process-item.active {
-    background: #fff;
-    color: #0a0a0a;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-                box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.process-item.active .process-header::after {
+.process-item.expanded .process-header::after {
     transform: rotate(45deg);
 }
 
@@ -1403,4 +1396,54 @@ section {
 
 .contact-method a:hover {
     color: #666;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-switch {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.language-switch a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+.language-switch a:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.language-switch a.active {
+    background: #000;
+    color: #fff;
+}
+
+/* 移动端样式 */
+@media (max-width: 768px) {
+    .navbar .language-switch {
+        display: none;
+    }
+    
+    .dropdown-menu .language-switch {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        padding-top: 20px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .dropdown-menu .language-switch a {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
 } 

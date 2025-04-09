@@ -6,6 +6,7 @@
     <title>Portfolio - Percent Studio</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/i18n.js"></script>
     <style>
         body {
             background-color: #fff;
@@ -228,16 +229,16 @@
             <!-- 下拉菜单 -->
             <div class="dropdown-menu" id="dropdownMenu">
                 <nav class="menu-nav">
-                    <a href="index.html">首页</a>
-                    <a href="works.html">精选案例</a>
-                    <a href="index.html#services">服务内容</a>
-                    <a href="index.html#grow">联系我们</a>
+                    <a href="index.html" data-i18n="home">首页</a>
+                    <a href="works.html" data-i18n="works">作品集</a>
+                    <a href="#services" data-i18n="services">服务</a>
+                    <a href="#contact" data-i18n="contact">联系我们</a>
                 </nav>
                 <div class="menu-footer">
                     <div class="language-switch">
-                        <a href="#">EN</a>
-                        <a href="#" class="active">中文</a>
-                        <a href="#">日本語</a>
+                        <a href="#" data-lang="en">EN</a>
+                        <a href="#" data-lang="zh" class="active">中文</a>
+                        <a href="#" data-lang="ja">日本語</a>
                     </div>
                 </div>
             </div>
@@ -248,8 +249,8 @@
     <section class="works-page">
         <div class="container">
             <div class="page-header">
-                <h1 class="page-title">探索我们的作品</h1>
-                <p class="page-subtitle">发现一系列展现我们<br>多样性和品质的精选项目。</p>
+                <h1 class="page-title" data-i18n="section_works">精选案例</h1>
+                <p class="page-subtitle" data-i18n="works_subtitle">我们为客户打造独特的数字体验，每个项目都是一次创新的探索。</p>
             </div>
 
             <div class="explore-section">
@@ -382,12 +383,14 @@
 
             <!-- 版权信息 -->
             <div class="footer-bottom">
-                <p>&copy;2024 percent</p>
                 <div class="footer-bottom-links">
-                    <a href="terms.html">Terms of Service</a>
-                    <a href="privacy.html">Privacy Policy</a>
-                </div>
-            </div>
+                   <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2025114576号-1</a>
+               </div>
+               <div class="footer-bottom-links">
+                   <a href="terms.html" data-i18n="terms">Terms of Service</a>
+                   <a href="privacy.html" data-i18n="privacy">Privacy Policy</a>
+               </div>
+           </div>
         </div>
     </footer>
 
