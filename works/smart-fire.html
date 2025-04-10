@@ -31,23 +31,23 @@
             </a>
             
             <button class="menu-btn" id="menuBtn">
-                <span class="menu-text">菜单</span>
+                <span class="menu-text" data-i18n="menu">菜单</span>
                 <span class="menu-dots">••</span>
             </button>
 
             <!-- 下拉菜单 -->
             <div class="dropdown-menu" id="dropdownMenu">
                 <nav class="menu-nav">
-                    <a href="../index.html">首页</a>
-                    <a href="../works.html">精选案例</a>
-                    <a href="../index.html#services">服务内容</a>
-                    <a href="../index.html#grow">联系我们</a>
+                    <a href="../index.html" data-i18n="home">首页</a>
+                    <a href="../works.html" data-i18n="works">精选案例</a>
+                    <a href="../index.html#services" data-i18n="services">服务内容</a>
+                    <a href="../index.html#grow" data-i18n="contact">联系我们</a>
                 </nav>
                 <div class="menu-footer">
                     <div class="language-switch">
-                        <a href="#">EN</a>
-                        <a href="#" class="active">中文</a>
-                        <a href="#">日本語</a>
+                        <a href="#" data-lang="en">EN</a>
+                        <a href="#" data-lang="zh" class="active">中文</a>
+                        <a href="#" data-lang="ja">日本語</a>
                     </div>
                 </div>
             </div>
@@ -56,25 +56,25 @@
 
     <!-- 项目头部 -->
     <div class="project-intro">
-        <span class="project-label">案例研究</span>
-        <h1 class="project-title">基于大数据的智能消防监控平台</h1>
-        <p class="project-subtitle">智慧消防平台是一个面向城市消防管理的综合性解决方案。通过物联网技术实时采集消防设备数据，利用大数据分析和人工智能技术，为消防管理部门提供设备监控、隐患预警、应急指挥等功能。</p>
+        <span class="project-label" data-i18n="case_study">案例研究</span>
+        <h1 class="project-title" data-i18n="smartfire_title">基于大数据的智能消防监控平台</h1>
+        <p class="project-subtitle" data-i18n="smartfire_subtitle">智慧消防平台是一个面向城市消防管理的综合性解决方案。通过物联网技术实时采集消防设备数据，利用大数据分析和人工智能技术，为消防管理部门提供设备监控、隐患预警、应急指挥等功能。</p>
     </div>
 
     <!-- 项目元信息 -->
     <div class="project-info">
         <div class="info-wrapper">
             <div class="meta-item">
-                <h3>客户</h3>
-                <p>北京市消防局</p>
+                <h3 data-i18n="client">客户</h3>
+                <p data-i18n="smartfire_client">北京市消防局</p>
             </div>
             <div class="meta-item">
-                <h3>年份</h3>
+                <h3 data-i18n="year">年份</h3>
                 <p>2024</p>
             </div>
             <div class="meta-item">
-                <h3>服务</h3>
-                <p>UI设计，前端开发</p>
+                <h3 data-i18n="services">服务</h3>
+                <p data-i18n="smartfire_service">UI设计，前端开发</p>
             </div>
         </div>
     </div>
@@ -88,21 +88,21 @@
 
     <!-- 主要功能 -->
     <div class="features-section">
-        <h2 class="section-title">主要功能</h2>
+        <h2 class="section-title" data-i18n="features_title">主要功能</h2>
         <div class="features-content">
             <ol class="features-list" style="counter-reset: item">
-                <li>实时监控：通过物联网设备实时采集消防设备运行数据，实现24小时不间断监控，及时发现设备异常。</li>
-                <li>智能预警：基于AI算法分析历史数据和实时数据，对潜在的消防安全隐患进行预警，提前防范事故发生。</li>
-                <li>应急指挥：集成GIS地图系统，提供可视化的应急指挥调度功能，优化应急响应流程。</li>
-                <li>数据分析：利用大数据技术，对消防设备运行状态、故障类型、维护记录等进行深度分析，辅助决策。</li>
-                <li>移动管理：提供移动端应用，支持随时随地进行设备监控、报警处理和任务分配。</li>
+                <li data-i18n="smartfire_feature1">实时监控：通过物联网设备实时采集消防设备运行数据，实现24小时不间断监控，及时发现设备异常。</li>
+                <li data-i18n="smartfire_feature2">智能预警：基于AI算法分析历史数据和实时数据，对潜在的消防安全隐患进行预警，提前防范事故发生。</li>
+                <li data-i18n="smartfire_feature3">应急指挥：集成GIS地图系统，提供可视化的应急指挥调度功能，优化应急响应流程。</li>
+                <li data-i18n="smartfire_feature4">数据分析：利用大数据技术，对消防设备运行状态、故障类型、维护记录等进行深度分析，辅助决策。</li>
+                <li data-i18n="smartfire_feature5">移动管理：提供移动端应用，支持随时随地进行设备监控、报警处理和任务分配。</li>
             </ol>
         </div>
     </div>
 
     <!-- 技术细节 -->
     <div class="tech-section">
-        <h2 class="section-title">Technical Details</h2>
+        <h2 class="section-title" data-i18n="tech_details">技术细节</h2>
         <div class="tech-tags">
             <span class="tech-tag">Vue.js</span>
             <span class="tech-tag">Spring Cloud</span>
@@ -118,21 +118,21 @@
 
     <!-- 项目成果 -->
     <div class="results-section">
-        <h2 class="section-title">Project Results</h2>
+        <h2 class="section-title" data-i18n="project_results">项目成果</h2>
         <div class="content-title">
-            <p>平台上线后，显著提升了消防管理效率。系统响应时间从分钟级降至秒级，设备故障发现时间缩短90%。通过智能预警功能，成功预防了多起潜在的消防安全事故。</p>
+            <p data-i18n="smartfire_results">平台上线后，显著提升了消防管理效率。系统响应时间从分钟级降至秒级，设备故障发现时间缩短90%。通过智能预警功能，成功预防了多起潜在的消防安全事故。</p>
             
             <div class="stats-grid">
                 <div class="stat-item">
-                    <div class="stat-label">故障发现提速</div>
+                    <div class="stat-label" data-i18n="fault_detection">故障发现提速</div>
                     <div class="stat-number">90%</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-label">系统响应提升</div>
+                    <div class="stat-label" data-i18n="system_response">系统响应提升</div>
                     <div class="stat-number">95%</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-label">隐患预防率</div>
+                    <div class="stat-label" data-i18n="prevention_rate">隐患预防率</div>
                     <div class="stat-number">85%</div>
                 </div>
             </div>
@@ -143,65 +143,65 @@
     <div class="more-projects">
         <div class="more-projects-content">
             <div class="more-projects-header">
-                <h3>更多案例研究</h3>
+                <h3 data-i18n="more_cases">更多案例研究</h3>
             </div>
             <div class="cases-grid">
                 <a href="terravolt.html" class="case-item">
-                    <div class="case-date">2024 年 1 月</div>
-                    <h3 class="case-title">TerraVolt官网</h3>
-                    <p class="case-desc">为可再生能源解决方案提供商打造现代化的品牌网站，展现环保理念。</p>
+                    <div class="case-date" data-i18n="terravolt_date">2024 年 1 月</div>
+                    <h3 class="case-title" data-i18n="work_terravolt_title">TerraVolt官网</h3>
+                    <p class="case-desc" data-i18n="work_terravolt_desc">为可再生能源解决方案提供商打造现代化的品牌网站，展现环保理念。</p>
                     <div class="read-more">
-                        阅读更多 <span>→</span>
+                        <span data-i18n="read_more">阅读更多</span> <span>→</span>
                     </div>
                 </a>
                 <a href="terminus.html" class="case-item">
-                    <div class="case-date">2024 年 1 月</div>
-                    <h3 class="case-title">TERMINUS官网</h3>
-                    <p class="case-desc">为人工智能和物联网领域的领先企业打造全新的品牌形象和网站设计。</p>
+                    <div class="case-date" data-i18n="terminus_date">2024 年 1 月</div>
+                    <h3 class="case-title" data-i18n="work_terminus_title">TERMINUS官网</h3>
+                    <p class="case-desc" data-i18n="work_terminus_desc">为人工智能和物联网领域的领先企业打造全新的品牌形象和网站设计。</p>
                     <div class="read-more">
-                        阅读更多 <span>→</span>
+                        <span data-i18n="read_more">阅读更多</span> <span>→</span>
                     </div>
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- 页脚 -->
+   <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <!-- 社交媒体 -->
                 <div class="footer-section">
-                    <h3>社交媒体</h3>
+                    <h3 data-i18n="social_media">社交媒体</h3>
                     <ul class="social-links">
-                        <li><a href="#">WeChat</a></li>
-                        <li><a href="#">WhatsApp</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">X</a></li>
+                        <li><a href="#" data-i18n="wechat">WeChat</a></li>
+                        <li><a href="#" data-i18n="whatsapp">WhatsApp</a></li>
+                        <li><a href="#" data-i18n="instagram">Instagram</a></li>
+                        <li><a href="#" data-i18n="x">X</a></li>
                     </ul>
                 </div>
 
                 <!-- 联系方式 -->
                 <div class="footer-section">
-                    <h3>联系方式</h3>
+                    <h3 data-i18n="contact">联系方式</h3>
                     <div class="contact-info">
-                        <a href="mailto:55447236@qq.com" class="contact-email">
+                        <a href="mailto:support@100100.studio" class="contact-email">
                             55447236<span class="highlight">@</span>qq.com
                         </a>
                         <a href="tel:+8618601080736" class="contact-phone">
-                            (+86) 186-0108-0736
+                            (+86) 155-1036-9998
                         </a>
                     </div>
                 </div>
 
                 <!-- 快速链接 -->
                 <div class="footer-section">
-                    <h3>快速链接</h3>
+                    <h3 data-i18n="quick_links">快速链接</h3>
                     <ul class="quick-links">
-                        <li><a href="../index.html">首页</a></li>
-                        <li><a href="../works.html">精选案例</a></li>
-                        <li><a href="../index.html#services">服务内容</a></li>
-                        <li><a href="../index.html#grow">联系我们</a></li>
+                        <li><a href="../index.html" data-i18n="home">首页</a></li>
+                        <li><a href="../works.html" data-i18n="works">精选案例</a></li>
+                        <li><a href="../index.html#services" data-i18n="services">服务内容</a></li>
+                        <li><a href="../index.html#grow" data-i18n="contact">联系我们</a></li>
                     </ul>
                 </div>
             </div>
@@ -217,14 +217,16 @@
 
             <!-- 版权信息 -->
             <div class="footer-bottom">
-                <p>&copy;2024 percent</p>
                 <div class="footer-bottom-links">
-                    <a href="../terms.html">Terms of Service</a>
-                    <a href="../privacy.html">Privacy Policy</a>
-                </div>
-            </div>
+                   <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2025114576号-1</a>
+               </div>
+               <div class="footer-bottom-links">
+                   <a href="../terms.html" data-i18n="terms">服务条款</a>
+                   <a href="../privacy.html" data-i18n="privacy">隐私政策</a>
+               </div>
+           </div>
         </div>
-    </footer>
+    </footer> 
 
     <script src="../js/main.js"></script>
 </body>

@@ -112,73 +112,76 @@ document.addEventListener('DOMContentLoaded', function() {
     // Particles.js配置
     if (document.getElementById('particles-js')) {
         particlesJS('particles-js', {
-            "particles": {
-                "number": {
-                    "value": 50,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
+            particles: {
+                number: {
+                    value: 60,
+                    density: {
+                        enable: true,
+                        value_area: 800
                     }
                 },
-                "color": {
-                    "value": "#000"
+                color: {
+                    value: '#000000'
                 },
-                "shape": {
-                    "type": "circle"
+                shape: {
+                    type: 'circle'
                 },
-                "opacity": {
-                    "value": 0.2,
-                    "random": false
+                opacity: {
+                    value: 0.2,
+                    random: false
                 },
-                "size": {
-                    "value": 5,
-                    "random": true
+                size: {
+                    value: 3,
+                    random: true
                 },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#000000",
-                    "opacity": 0.1,
-                    "width": 1
+                line_linked: {
+                    enable: true,
+                    distance: 100,
+                    color: '#000000',
+                    opacity: 0.1,
+                    width: 1
                 },
-                "move": {
-                    "enable": true,
-                    "speed": 1,
-                    "direction": "none",
-                    "random": true,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": true,
-                        "rotateX": 600,
-                        "rotateY": 1200
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'top-left',
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: true,
+                        rotateX: 600,
+                        rotateY: 1200
                     }
                 }
             },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "grab"
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
                     },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
                     },
-                    "resize": true
+                    resize: true
                 },
-                "modes": {
-                    "grab": {
-                        "distance": 200,
-                        "line_linked": {
-                            "opacity": 0.4
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 0.3
                         }
+                    },
+                    push: {
+                        particles_nb: 4
                     }
                 }
             },
-            "retina_detect": true
+            retina_detect: true
         });
     }
 
